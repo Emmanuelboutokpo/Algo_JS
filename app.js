@@ -1,18 +1,12 @@
- let temps =parseInt(prompt("Saisir le temps T "));
- let hours, minutes, sec, a,b,c;
-
- a=temps/3600;
- hours= Math.floor(a);
-
-b=60*(a-hours);
-minutes=Math.floor(b);
-
-c=60*(b-minutes);
-sec =Math.floor(c);
-
- if (temps < 3600) {
-    alert("You have done " + minutes +" minutes " + sec + " sec")
- 
- } else {
-    alert("It's" + hours + " hours " + minutes +" minutes " + sec + " sec")
- }
+  /**Exercice Algorithmique 2*/
+   
+ let x_a =parseInt(prompt("Saisir la distance A : "));
+ let x_b =parseInt(prompt("Saisir la distance B : "));
+ let y_a =parseInt(prompt("Saisir la distance A : "));
+ let y_b =parseInt(prompt("Saisir la distance B : "));
+ let AB, A,B,C;
+A = Math.pow((x_b-x_a),2);
+B = Math.pow((y_b-y_a),2);
+C=A+B;
+AB=Math.sqrt(C);
+alert(AB)
